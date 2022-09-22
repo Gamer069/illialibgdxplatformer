@@ -1,0 +1,39 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Всі файли (*)",
+    "fileStates": {
+        "levels/level1.tmx": {
+            "scale": 0.47351562499999994,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 639.894406863554,
+                "y": 317.83534070285435
+            }
+        }
+    },
+    "last.imagePath": "/Users/anton/Desktop/illialibgdxplatformer/assets",
+    "last.objectTemplatePath": "/Users/anton/Desktop/illialibgdxplatformer/assets/levels",
+    "map.height": 20,
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "map.width": 30,
+    "openFiles": [
+    ],
+    "project": "level1.tiled-project",
+    "property.type": "file",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 64,
+        "width": 64
+    }
+}
