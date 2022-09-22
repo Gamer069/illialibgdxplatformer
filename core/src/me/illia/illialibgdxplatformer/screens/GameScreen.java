@@ -26,7 +26,7 @@ public class GameScreen extends ScreenAdapter {
 	public GameScreen(OrthographicCamera camera) {
 		this.camera = camera;
 		this.batch = new SpriteBatch();
-		this.world = new World(new Vector2(0, 0), false);
+		this.world = new World(new Vector2(0, -9.81f), false);
 		this.debugRenderer = new Box2DDebugRenderer();
 		this.tilemapHelper = new TilemapHelper(this);
 		this.tiledMapRenderer = tilemapHelper.setupLevel();
@@ -52,7 +52,12 @@ public class GameScreen extends ScreenAdapter {
 		}
 	}
 	private void cameraUpdate() {
-		camera.position.set(new Vector3(0, 0, 0));
+		Vector3 pos = camera.position;
+		pos.x = Math.round(playerEntity.getBody().getPosition().x * PPM * 10) / 10f;
+		pos.y = Math.round(playerEntity.getBody().getPosition().y * PPM * 10) / 10f;
+		camera.position.set(pos);
+//		camera.position.set(new Vector3(0, 0, 0));
+		System.out.println("Camera Pos Has Been Set To " + pos.y + " Y, " + pos.x + " X");
 		camera.update();
 	}
 

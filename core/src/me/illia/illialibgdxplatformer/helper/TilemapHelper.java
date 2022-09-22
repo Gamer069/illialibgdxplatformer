@@ -39,7 +39,7 @@ public class TilemapHelper {
 			if (object instanceof RectangleMapObject) {
 				Rectangle rectangle = ((RectangleMapObject) object).getRectangle();
 				String rectangleName = object.getName();
-				if (rectangleName.equals("player")) {
+				if (rectangleName != null && rectangleName.equals("player")) {
 					Body body = BodyHelperService.createBody(rectangle.getX() + rectangle.getWidth() / 2, rectangle.getY() + rectangle.getHeight() / 2, rectangle.getWidth(), rectangle.getHeight(), false, screen.getWorld());
 					screen.setPlayerEntity(new PlayerEntity(rectangle.getWidth(), rectangle.getHeight(), body));
 				}

@@ -6,14 +6,22 @@
     "activeFile": "",
     "expandedProjectPaths": [
     ],
-    "file.lastUsedOpenFilter": "Всі файли (*)",
+    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "levels/level1.tmx": {
             "scale": 0.47351562499999994,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 639.894406863554,
-                "y": 317.83534070285435
+                "x": 432.93185942913726,
+                "y": 395.97426167299125
+            }
+        },
+        "levels/tutorial-level.tmx": {
+            "scale": 1.2015,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 33.29171868497713,
+                "y": 1194.7565543071162
             }
         }
     },
